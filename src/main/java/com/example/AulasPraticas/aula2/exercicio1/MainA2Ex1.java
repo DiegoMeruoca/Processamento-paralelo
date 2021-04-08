@@ -2,7 +2,7 @@ package com.example.AulasPraticas.aula2.exercicio1;
 
 import java.util.Random;
 
-class MainEx1 {
+class MainA2Ex1 {
   //variáveis globais
   public static int vet[]; //declarar um vetor em Java
   public static int tamanho = 10;
@@ -41,10 +41,10 @@ class MainEx1 {
 
 
     //criando a 1a thread
-    ThreadE1 ta = new ThreadE1(0,tamanho/4,0);//instanciando um obj da classe ThreadVetor
-    ThreadE1 tb = new ThreadE1(tamanho/4,tamanho/2,1);//instanciando um obj da classe ThreadVetor
-    ThreadE1 tc = new ThreadE1(tamanho/2,3*tamanho/4,2);//instanciando um obj da classe ThreadVetor
-    ThreadE1 td = new ThreadE1(3*tamanho/4,tamanho,3);//instanciando um obj da classe ThreadVetor
+    ThreadA2E1 ta = new ThreadA2E1(0,tamanho/4,0);//instanciando um obj da classe ThreadVetor
+    ThreadA2E1 tb = new ThreadA2E1(tamanho/4,tamanho/2,1);//instanciando um obj da classe ThreadVetor
+    ThreadA2E1 tc = new ThreadA2E1(tamanho/2,3*tamanho/4,2);//instanciando um obj da classe ThreadVetor
+    ThreadA2E1 td = new ThreadA2E1(3*tamanho/4,tamanho,3);//instanciando um obj da classe ThreadVetor
 
     ta.start(); //inicia a thread --> colocar a thread para rodar!
     tb.start();

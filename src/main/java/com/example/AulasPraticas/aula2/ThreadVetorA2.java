@@ -1,12 +1,12 @@
 package com.example.AulasPraticas.aula2;
 
 //Esta classe terá as instruções que a thread irá executar
-public class ThreadVetor extends Thread{
+public class ThreadVetorA2 extends Thread{
 
   int posInicial, posFinal, posVetor;
 
   //construtor serve neste caso para receber os parametros (argumentos)
-  public ThreadVetor(int inicio, int fim, int indice) {
+  public ThreadVetorA2(int inicio, int fim, int indice) {
     posInicial = inicio;
     posFinal = fim;
     posVetor = indice;
@@ -18,10 +18,10 @@ public class ThreadVetor extends Thread{
 
     int soma = 0;
     for(int i = posInicial; i < posFinal; i++) {
-      Main.resultado[posVetor] = Main.resultado[posVetor] + Main.vet[i];
+      MainA2.resultado[posVetor] = MainA2.resultado[posVetor] + MainA2.vet[i];
     }
     System.out.println();
-    System.out.println("Soma calculada pela "+this.getName()+" "+Main.resultado[posVetor]);
+    System.out.println("Soma calculada pela "+this.getName()+" "+ MainA2.resultado[posVetor]);
   }
 
 }

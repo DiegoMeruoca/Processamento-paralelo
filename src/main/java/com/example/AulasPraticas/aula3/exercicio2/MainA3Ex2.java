@@ -2,7 +2,7 @@ package com.example.AulasPraticas.aula3.exercicio2;
 
 import java.util.Scanner;
 
-class MainEx2 {
+class MainA3Ex2 {
   //variáveis globais
   public static int qtdRodadas = 3;
   public static int jogadas[][];
@@ -26,8 +26,8 @@ class MainEx2 {
     }
 
     //criando a 1a thread
-    ThreadE2 ta = new ThreadE2(qtdRodadas, 0);//instanciando um obj da classe ThreadVetor
-    ThreadInputE2 tb = new ThreadInputE2(qtdRodadas, 1);//instanciando um obj da classe ThreadVetor
+    ThreadA3E2 ta = new ThreadA3E2(qtdRodadas, 0);//instanciando um obj da classe ThreadVetor
+    ThreadInputA3E2 tb = new ThreadInputA3E2(qtdRodadas, 1);//instanciando um obj da classe ThreadVetor
 
     ta.start(); //inicia a thread --> colocar a thread para rodar!
     tb.start();

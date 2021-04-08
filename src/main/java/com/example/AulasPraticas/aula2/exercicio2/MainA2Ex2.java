@@ -1,8 +1,6 @@
 package com.example.AulasPraticas.aula2.exercicio2;
 
-import java.util.Random;
-
-class MainEx2 {
+class MainA2Ex2 {
   //variáveis globais
   public static int qtdRodadas = 10;
   public static String jogadas[][];
@@ -11,8 +9,8 @@ class MainEx2 {
     jogadas = new String[2][qtdRodadas];
 
     //criando a 1a thread
-    ThreadE2 ta = new ThreadE2(qtdRodadas, 0);//instanciando um obj da classe ThreadVetor
-    ThreadE2 tb = new ThreadE2(qtdRodadas, 1);//instanciando um obj da classe ThreadVetor
+    ThreadA2E2 ta = new ThreadA2E2(qtdRodadas, 0);//instanciando um obj da classe ThreadVetor
+    ThreadA2E2 tb = new ThreadA2E2(qtdRodadas, 1);//instanciando um obj da classe ThreadVetor
 
     ta.start(); //inicia a thread --> colocar a thread para rodar!
     tb.start();

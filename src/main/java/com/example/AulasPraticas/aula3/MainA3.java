@@ -1,10 +1,10 @@
 package com.example.AulasPraticas.aula3;
 
-class Main {
+class MainA3 {
   public static int cenario = 1;
   public static void main(String[] args) throws InterruptedException {
 
-    ThreadSom ta = new ThreadSom();
+    ThreadSomA3 ta = new ThreadSomA3();
     ta.start();
   }
 
